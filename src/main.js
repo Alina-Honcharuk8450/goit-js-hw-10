@@ -37,7 +37,7 @@ form.addEventListener('submit', event => {
       row.textContent = `✅ ${drink} · готове · ${value} ms`;
     })
     .catch(value => {
-      row.classList.replace('row-pending', 'row-ok');
+      row.classList.replace('row-pending', 'row-err');
       row.textContent = `❌ ${drink} · скасовано · ${value} ms`;
     })
     .finally(() => {
